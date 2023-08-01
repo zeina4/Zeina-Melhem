@@ -1,0 +1,293 @@
+:root{
+    --dark-color:  #a2c1ad;
+    --yy-color:  #10585E;
+    --red-color:#d57454;
+    --section-color: #e1f1e9;
+}
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    
+}
+
+.navbar{
+    background-color:var(--dark-color);
+    
+
+}
+.navbar img{
+    margin-top: -20px;
+    margin-bottom: -35px;
+}
+.navbar .navbar-nav .nav-link{
+    color:rgb(255, 255, 255);
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+    color:var(--yy-color);
+}
+.navbar .search{
+    border-left: 1px solid var(--yy-color);
+}
+.navbar .search svg{
+    color:var(--yy-color);
+}
+.navbar .navbar-toggler {
+    color: white;
+    font-size:25px;
+    border-color: beige;
+    border-radius: 3px;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"]{
+    border-color: var(--yy-color);
+}
+.landing{
+    background-color: var(--dark-color);
+    min: height 200px;
+    
+    
+}
+.landing h1{
+  color: var(--yy-color);
+}
+
+.main-btn{
+    background-color: var(--red-color) ;
+    color:antiquewhite;
+    padding:0.5rem 1rem;
+}
+.main-btn:hover{
+    background-color: var(--yy-color) ;
+    color: var(--dark-color) ;
+}
+h2{
+    color: var(--yy-color) ; 
+}
+h3{
+    color: var(--yy-color) ; 
+}
+.features .icon-holder {
+    height: 150px;
+
+}
+.features .icon-holder svg{
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.features h2{
+    color: var(--red-color);
+}
+.features p{
+    color: var(--red-color);
+}
+
+.features .icon-holder .icon{
+    font-size:3rem;
+    color:var(--yy-color);
+}
+.features .icon-holder .number{
+    color:#f2f6fa;
+    font-size:9rem;
+}
+.features .feat h4{
+    color:var(--red-color);
+}
+.our-work{
+    background-color: var(--section-color);
+}
+.our-work .tob{
+    color: var(--red-color);
+}
+.our-work .box{
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+    padding: 5px;
+    color:#d57454;
+}
+.our-work .box::before{
+    content: attr(data-work);
+    position: absolute;
+    background-color: #a2c1adc5;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  #f7f7f7;
+    font-size: 1.5rem;
+    transition: 0.3s;
+    transform: translateX(-300px);
+}
+.our-work .box:hover::before{
+    transform: translateX(0);
+}
+.stuff .description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 500px;
+}
+
+.text h3{
+    color: var(--red-color);
+}
+.text h2{
+    color: var(--yy-color);
+}
+.team {
+    background-color: var(--section-color);
+    
+
+}
+.project{
+    margin-top: -50px;
+    height: 400px;
+}
+.team h2{
+    color: var(--red-color);
+}
+.team h4{
+    color:#10585ecf;
+
+}
+.team blockquote{
+    background-color:antiquewhite;
+}
+
+
+.project{
+    background-color: var(--dark-color) ;
+}
+.project h2{
+    color:#f7f7f7;
+}
+.subscribe{
+    
+    padding: 30px;    
+    background-color:antiquewhite;
+
+}
+.subscribe input[type="text"] {
+    border: none;
+    border-bottom: 1px solid white;
+}
+.subscribe input[type="text"] {
+    outline: none;
+}
+.subscribe ::placeholder{
+    color:#97ada2;
+}
+.subscribe input[type="submit"]{
+    background-color: var(--yy-color);
+    color: white;
+}
+.subscribe .texxt{
+    color:var(--yy-color);
+}
+.footer{
+    background-color: var(--dark-color);
+}
+.footer .copyright > span{
+    color:var(--yy-color);
+}
+.footer .copyright div span{
+    color:var(--red-color);
+}
+footer .contact ul svg{
+    width:20px;
+    height:20px;
+}
+.footer .facebook{
+    background-color: #1877f2;
+}
+.footer .twitter{
+    background-color: #1da1f2;
+}
+.footer .linkedin{
+    background-color: #0077b5;
+}
+.footer .youtube{
+    background-color: #ff0000;
+}
+
+
+ /*:root{
+    --dark-color:  #a2c1ad;
+    --yy-color:  #10585E;
+    --red-color:  #d57454;
+    --section-color: #e1f1e9;
+}*/
+/*<div class="team text-center pb-5 pt-5">
+  <div class="container pb-5 pt-3">
+    
+    <h2 class="fw-bold "><i class="fa-solid fa-people-group"></i> Meat the Team</h2>
+    
+    <div class="row">
+      
+     <div class="col-md-6 col-lg-3">
+      <div class="box ">
+        
+        <div class="card" style="width:200px">
+          <img class="card-img-top" src="team30.png" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Alan Carson</h4>
+            <p class="card-text text-black-50 p-2">Senior Creative </p>
+            <a class="btn  rounded-pill main-btn" href="#">See Profile</a>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="box ">
+        <div class="card" style="width:200px">
+          <img class="card-img-top" src="team40.png" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Sarah Divall</h4>
+            <p class="card-text p-2 text-black-50">Creative Producer</p>
+            <a class="btn  rounded-pill main-btn" href="#">See Profile</a>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="box ">
+         
+        
+        <div class="card" style="width:200px">
+          <img class="card-img-top" src="team25.png" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text text-black-50 p-2">Head of Finance</p>
+            <a class="btn  rounded-pill main-btn" href="#">See Profile</a>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="box ">
+         
+        
+        <div class="card" style="width:200px">
+          <img class="card-img-top" src="team15.png" alt="Card image">
+          <div class="card-body">
+            <h4 class="card-title">Lily Green</h4>
+            <p class="card-text text-black-50 p-2">Senior Creative</p>
+            <a class="btn  rounded-pill main-btn" href="#">See Profile</a>
+          </div>
+        </div>
+        </div>
+      </div>
+        
+        
+      
+    
+    </div>
+  </div>
+
+</div>
